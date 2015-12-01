@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
     <script type="text/javascript" src="angular.js"></script>
     <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="products.js"></script>
 </head>
 
 <body ng-controller="StoreController as store">
@@ -20,7 +21,7 @@
         <h3>{{product.name}} <em class="pull-right">{{product.price | currency}}</em></h3>
 
         <!-- Image Gallery  -->
-        <product-gallery ng-show="product.images.length"></product-gallery>
+        <product-gallery></product-gallery>
 
         <!-- Product Tabs  -->
         <product-tabs></product-tabs>
